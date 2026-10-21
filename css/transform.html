@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Transform</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+            padding: 40px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        .demo {
+            width: 220px;
+            min-height: 200px;
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .demo h2 {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        .demo p {
+            color: #475569;
+            font-size: 14px;
+        }
+
+        .box {
+            width: 70px;
+            height: 70px;
+            margin: 25px auto;
+            background: #38bdf8;
+            border-radius: 10px;
+
+            /*
+                Transition is added only
+                to make the transform visible smoothly.
+            */
+
+            transition: transform 3s;
+        }
+
+
+        /* =====================================
+           1. translate()
+        ===================================== */
+
+        .translate-box:hover {
+            transform: translate(20px, 50px);
+        }
+
+
+        /* =====================================
+           2. translateX()
+        ===================================== */
+
+        .translate-x-box:hover {
+            transform: translateX(-50px);
+        }
+
+
+        /* =====================================
+           3. translateY()
+        ===================================== */
+
+        .translate-y-box:hover {
+            transform: translateY(30px);
+        }
+
+
+        /* =====================================
+           4. scale()
+        ===================================== */
+
+        .scale-box:hover {
+            transform: scale(1.5);
+            /* border-radius: 50%; */
+        }
+
+
+        /* =====================================
+           5. scaleX()
+        ===================================== */
+
+        .scale-x-box:hover {
+            transform: scaleX(1.5);
+        }
+
+
+        /* =====================================
+           6. scaleY()
+        ===================================== */
+
+        .scale-y-box:hover {
+            transform: scaleY(1.5);
+        }
+
+
+        /* =====================================
+           7. rotate()
+        ===================================== */
+
+        .rotate-box:hover {
+            transform: rotate(180deg);
+        }
+
+
+        /* =====================================
+           8. rotateX()
+        ===================================== */
+
+        .rotate-x-box:hover {
+            transform: rotateX(180deg);
+        }
+
+
+        /* =====================================
+           9. rotateY()
+        ===================================== */
+
+        .rotate-y-box:hover {
+            transform: rotateY(-180deg);
+        }
+
+
+        /* =====================================
+           10. COMBINING TRANSFORMS
+        ===================================== */
+
+        .combined-box:hover {
+            transform:
+                translateY(-20px)
+                scale(1.6)
+                rotate(150deg);
+                /* border-radius: 50%; */
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Transform</h1>
+
+    <div class="container">
+
+        <!-- translate -->
+
+        <div class="demo">
+            <h2>translate()</h2>
+            <div class="box translate-box"></div>
+            <p>
+                Moves in X and Y direction.
+            </p>
+        </div>
+
+        <!-- translateX -->
+
+        <div class="demo">
+
+            <h2>translateX()</h2>
+
+            <div class="box translate-x-box"></div>
+
+            <p>
+                Moves horizontally.
+            </p>
+
+        </div>
+
+
+        <!-- translateY -->
+
+        <div class="demo">
+
+            <h2>translateY()</h2>
+
+            <div class="box translate-y-box"></div>
+
+            <p>
+                Moves vertically.
+            </p>
+
+        </div>
+
+
+        <!-- scale -->
+
+        <div class="demo">
+
+            <h2>scale()</h2>
+
+            <div class="box scale-box"></div>
+
+            <p>
+                Changes width and height.
+            </p>
+
+        </div>
+
+
+        <!-- scaleX -->
+
+        <div class="demo">
+
+            <h2>scaleX()</h2>
+
+            <div class="box scale-x-box"></div>
+
+            <p>
+                Changes width.
+            </p>
+
+        </div>
+
+
+        <!-- scaleY -->
+
+        <div class="demo">
+
+            <h2>scaleY()</h2>
+
+            <div class="box scale-y-box"></div>
+
+            <p>
+                Changes height.
+            </p>
+
+        </div>
+
+
+        <!-- rotate -->
+
+        <div class="demo">
+
+            <h2>rotate()</h2>
+
+            <div class="box rotate-box"></div>
+
+            <p>
+                Rotates the element.
+            </p>
+
+        </div>
+
+
+        <!-- rotateX -->
+
+        <div class="demo">
+
+            <h2>rotateX()</h2>
+
+            <div class="box rotate-x-box"></div>
+
+            <p>
+                Rotates around X-axis.
+            </p>
+
+        </div>
+
+
+        <!-- rotateY -->
+
+        <div class="demo">
+
+            <h2>rotateY()</h2>
+
+            <div class="box rotate-y-box"></div>
+
+            <p>
+                Rotates around Y-axis.
+            </p>
+
+        </div>
+
+
+        
+        <!-- Combined -->
+
+        <div class="demo">
+
+            <h2>Combined</h2>
+
+            <div class="box combined-box"></div>
+
+            <p>
+                Translate + Scale + Rotate.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    // let name = "Kartik Kumar Sharma";
+    // console.log(`Name : ${name}`);
+    // console.log(name.includes("Kumar"));       // true
+    // console.log(name.indexOf("Kumar"));        // 7
+    // console.log(name.startsWith("Kartik"));     // true
+    // console.log(name.endsWith("Sharma"));       // true
+    // console.log(name.slice(0, 6));              // Kartik
+    // console.log(name.substring(7, 12));         // Kumar
+    // console.log(name.split(" "));               // ["Kartik","Kumar","Sharma"]
+    // console.log(name.replace("Kumar", "K."));   // Kartik K. Sharma
+    // console.log(name.repeat(2));                // Kartik Kumar SharmaKartik Kumar Sharma
+    // console.log(name.toLowerCase());     // kartik kumar sharma
+
+
+// let arr1 = [10, 20, 30];
+// let arr2 = arr1.slice();
+// arr2[0] = 100;
+// console.log(arr1); // [10, 20, 30]
+// console.log(arr2); // [100, 20, 30]
+
+
+// let arr1 = [101, 20, 30];
+// let arr2 = [...arr1];
+// arr2[0] = 1010;
+// console.log(arr1); // [10, 20, 30]
+// console.log(arr2); // [100, 20, 30]
+
+
+// let arr = [10, 20, 30];
+// let [a, , c] = arr;
+// console.log(a); // 10
+// console.log(c); // 30
+
+
+
+//map method
+// let arr=[12,13,14,15,16,17]
+// for (let i=0; i<arr.length;i++){
+//     if (arr[i]%2==0){
+//         console.log(`${arr[i]} even`)
+//     }
+//     else{
+//         console.log(`${arr[i]} odd`)
+//     }
+// }
+
+// let arr=[12,13,14,15,16,17]
+// //[even,odd,even,odd,even,odd]
+// let res=arr.map((ele,ab)=>{
+//     if (ele%2==0){
+//         return "even"
+//     }
+//     else{
+//         return "odd"
+//     }   
+// })
+
+// foreach()--it have not any return type
+// let arr=[12,13,14,15,16,17]
+// //[even,odd,even,odd,even,odd]
+// let res=arr.forEach((ele,ab)=>{
+//     if (ele%2==0){
+//         return "even"
+//     }
+//     else{
+//         return "odd"
+//     }   
+// })
+
+//// foreach()--it have not any return type[give undefined]
+// let arr=[12,13,14,15,16,17]
+// //[even,odd,even,odd,even,odd]
+// let res=arr.forEach((ele,ab)=>{
+//     if (ele%2==0){
+//         console.log("Even NUmber")
+//         return "even"
+//     }
+//     else{
+//         console.log("Odd NUmber")
+//         return "odd"
+//     }   
+// })
+// console.log(res)
+
+//some()-behave like logical OR Operator
+let arr=[12,13,14,15,16,17]
+//[even,odd,even,odd,even,odd]
+let res=arr.some((ele,ab)=>{
+    if (ele%2==0){
+        return true
+    }
+    else{
+        return false
+    }   
+})
+console.log(res)
+
+//every()-behave like logical And Operator
+let arr1=[12,13,14,15,16,17]
+//[even,odd,even,odd,even,odd]
+let res1=arr.every((ele,ab)=>{
+    if (ele%2==0){
+        return true
+    }
+    else{
+        return false
+    }   
+})
+console.log(res1)
+
+</script>
+</html>

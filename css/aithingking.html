@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>AI Thinking Animation</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0f172a;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Main Card */
+
+.ai-card {
+
+    width: 350px;
+    padding: 40px;
+
+    text-align: center;
+
+    background: #1e293b;
+
+    border-radius: 20px;
+
+    animation: cardFloat 3s ease-in-out 5 alternate;
+
+    /* animation-name: cardFloat;
+    animation-duration: 3s;
+
+    animation-timing-function:ease-in-out;[
+    linear → same speed
+    ease → smooth movement
+    ease-in → slowly start
+    ease-out → slowly end
+    ease-in-out → slowly start + slowly end
+]
+    animation-iteration-count: infinite;
+    animation-direction: alternate; 
+    [
+    normal → same direction mein chalegi
+    reverse → reverse direction mein chalegi
+    alternate → forward + reverse direction
+    alternate-reverse → reverse + forward direction
+]
+    */
+}
+
+/* Card floating */
+
+@keyframes cardFloat {
+
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-45px);
+    }
+}
+
+
+/* AI Circle */
+
+.ai {
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    border-radius: 50%;
+    background: #38bdf8;
+    font-size: 50px;
+
+    animation:
+        brainPulse 1.5s ease-in-out infinite alternate,
+        brainRotate 5s linear infinite;
+}
+
+/* Brain pulse */
+
+@keyframes brainPulse {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.15);
+    }
+}
+
+
+/* Brain rotation */
+
+@keyframes brainRotate {
+
+    from {
+        rotate: 0deg;
+    }
+
+    to {
+        rotate: 360deg;
+    }
+
+}
+
+
+
+
+/* Heading */
+
+h1 {
+    color: white;
+    animation: textGlow 2s ease-in-out infinite alternate;
+}
+
+
+/* Heading glow */
+
+@keyframes textGlow {
+
+    from {
+        opacity: 0.2;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+
+/* Thinking Text */
+
+.thinking {
+    color: #94a3b8;
+    font-size: 20px;
+}
+
+
+/* Dots */
+
+.dots span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    border-radius: 50%;
+    background: #38bdf8;
+    animation: dotJump 1s infinite alternate;
+}
+
+
+/* Different delays */
+
+.dots span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.dots span:nth-child(2) {
+    animation-delay:0.5s;
+}
+
+.dots span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+
+
+/* Dots */
+
+@keyframes dotJump {
+
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-12px);
+    } 
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<div class="ai-card">
+
+    <div class="ai">
+        🤖
+    </div>
+
+    <h1>AI Assistant</h1>
+
+    <p class="thinking">
+        Thinking
+    </p>
+
+    <div class="dots">
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        /* height: 100vh; */
+        height: 1200px;
+        width: 100%;
+        background: #080c14;
+        color: #f8fafc;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 20px;
+        
+      }
+      img {
+    max-width: 100%;
+}
+      main {
+        width: 100%;
+        height: 700px;
+        background: #080c14;
+        border-top: 1px solid #182232;
+        border-bottom: 1px solid #182232;
+      }
+      footer {
+        width: 100%;
+        height: 400px;
+        background: #080c14;
+        border-top: 1px solid #182232;
+        border-bottom: 1px solid #182232;
+      }
+
+      ul > li {
+        list-style: none;
+      }
+      a {
+        color: #a9b4c3;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.2s ease;
+      }
+
+      a:hover {
+        /* color: rgb(0, 255, 255); */
+        color: #ffffff;
+      }
+
+      nav{
+        height: 70px;
+        width: 100%;
+        background: #0c121d;
+        border-top: 1px solid #182232;
+        border-bottom: 1px solid #182232;
+      }
+      .nav-container {
+        height: 70px;
+        width: 100%;
+        font-size: 45px;
+        color: #f8fafc;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        
+
+      }
+      .nav-logo-items {
+        width: 20%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        align-items: center;
+      }
+      .nav-items {
+        width: 50%;
+        height: 80%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+       
+      }
+      .nav-talk-items {
+        width: 20%;
+        height: 80%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+
+      .card-container {
+        width: 100%;
+        height: 500px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: start;
+        gap: 2%;
+        margin-top: 20px;
+     
+      }
+      .card {
+        width: 30%;
+        height: 200px;
+        background: #1d2939;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        text-align: center;
+        box-shadow: inset 4px 4px 10px rgb(0, 255, 255);
+      }
+
+
+      .ftr-container {
+        /* height: 100%; */
+        margin: 0px 5%;
+        width: 90%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: start;
+        background: #080c14;
+        padding-top: 30px;
+      }
+      .ftr-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 10px;
+        
+        
+      }
+      .ftr-item > h2 {
+        color: rgb(0, 255, 255);
+      }
+      
+    </style>
+  </head>
+  <body>
+    <nav class="nav-container">
+      <ul class="nav-logo-items">
+        <li><a href="#">Nav-Card-Footer</a></li>
+      </ul>
+
+      <ul class="nav-items">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Skills</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+
+      <ul class="nav-talk-items">
+        <li><a href="#">Let's Talk</a></li>
+        <li><input type="text" placeholder="search here" /></li>
+      </ul>
+    </nav>
+    <main>
+      <div class="card-container">
+        <div class="card">
+          <h2>Card 1</h2>
+          <img
+            src="https://m.media-amazon.com/images/I/61xB64fZVZL._SR210,210_.jpg"
+            height="100px"
+            alt="card1_img"
+          />
+          <p>This is the content of Card 1.</p>
+        </div>
+        <div class="card">
+          <h2>Card 2</h2>
+          <img
+            src="https://m.media-amazon.com/images/I/61xB64fZVZL._SR210,210_.jpg"
+            height="100px"
+            alt="card2_img"
+          />
+          <p>This is the content of Card 2.</p>
+        </div>
+        <div class="card">
+          <h2>Card 3</h2>
+          <img
+            src="https://m.media-amazon.com/images/I/61xB64fZVZL._SR210,210_.jpg"
+            height="100px"
+            alt="card3_img"
+          />
+          <p>This is the content of Card 3.</p>
+        </div>
+        <div class="card">
+          <h2>Card 4</h2>
+          <img
+            src="https://m.media-amazon.com/images/I/61xB64fZVZL._SR210,210_.jpg"
+            height="100px"
+            alt="card4_img"
+          />
+          <p>This is the content of Card 4.</p>
+        </div>
+        <div class="card">
+          <h2>Card 5</h2>
+          <img
+            src="https://m.media-amazon.com/images/I/61xB64fZVZL._SR210,210_.jpg"
+            height="100px"
+            alt="card5_img"
+          />
+          <p>This is the content of Card 5.</p>
+        </div>
+        <div class="card">
+          <h2>Card 6</h2>
+          <img
+            src="https://m.media-amazon.com/images/I/61xB64fZVZL._SR210,210_.jpg"
+            height="100px"
+            alt="card6_img"
+          />
+          <p>This is the content of Card 6.</p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="ftr-container">
+        <ul class="ftr-item">
+          <h2>Get to Know Us</h2>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Press Releases</a></li>
+          <li><a href="#">Amazon Science</a></li>
+        </ul>
+
+        <ul class="ftr-item">
+          <h2>Connect with Us</h2>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
+        <ul class="ftr-item">
+          <h2>Make Money with Us</h2>
+          <li><a href="#">Sell on Amazon</a></li>
+          <li><a href="#">Sell under Amazon Brand</a></li>
+          <li><a href="#">Join the Amazon Associates Program</a></li>
+          <li><a href="#">Advertise Your Products</a></li>
+          <li><a href="#">Self-Publish with Us</a></li>
+          <li><a href="#">Host an Amazon Hub</a></li>
+          <li><a href="#">See More Make Money with Us</a></li>
+        </ul>
+        <ul class="ftr-item">
+          <h2>Let Us Help You</h2>
+          <li><a href="#">Amazon and COVID-19</a></li>
+          <li><a href="#">Your Account</a></li>
+          <li><a href="#">Your Orders</a></li>
+          <li><a href="#">Shipping Rates & Policies</a></li>
+          <li><a href="#">Returns & Replacements</a></li>
+          <li><a href="#">Manage Your Content and Devices</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

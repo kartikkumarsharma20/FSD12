@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Todo List</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>My Todo List</h1>
+        <form class="todo-form">
+            <input class="input" type="text" placeholder="Enter todo" aria-label="Enter a task" autocomplete="off">
+            <button class="btn" type="submit">Add Task</button>
+        </form>
+    </main>
+
+    <section class="list-Container" aria-label="Todo tasks">
+        <ul class="todo-list"></ul>
+        <p class="empty-message">No tasks yet. Add your first task!</p>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+</html>

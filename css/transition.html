@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Transition</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+            padding: 40px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        .demo {
+            width: 220px;
+            min-height: 200px;
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .demo h2 {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        .demo p {
+            color: #475569;
+            font-size: 14px;
+        }
+
+        .box {
+            width: 70px;
+            height: 70px;
+            margin: 25px auto;
+            background: #38bdf8;
+            border-radius: 10px;
+        }
+
+
+        /* =====================================
+           1. transition-duration
+        ===================================== */
+
+        .duration-box {
+            transition-property: background-color;
+            transition-duration: 1s;
+        }
+
+        .duration-box:hover {
+            background-color: #d40f01;
+        }
+
+
+        /* =====================================
+           2. transition-timing-function
+        ===================================== */
+
+        .timing-box {
+            transition-property: transform;
+            transition-duration: 5s;
+            transition-timing-function: ease-in-out;
+        }
+
+        .timing-box:hover {
+            transform: translateX(-80px);
+        }
+
+
+        /* =====================================
+           3. transition-delay
+        ===================================== */
+
+        .delay-box {
+            transition-property: transform;
+            transition-duration: 10s;
+            transition-delay: 2s;
+        }
+
+        .delay-box:hover {
+            transform: rotate(180deg);
+        }
+
+
+        /* =====================================
+           4. transition shorthand
+        ===================================== */
+
+        .shorthand-box {
+            transition: transform 4s ease-in-out 1s;
+        }
+
+        .shorthand-box:hover {
+            transform: scale(1.3);
+        }
+
+
+        /* =====================================
+           5. REAL-WORLD EXAMPLE
+        ===================================== */
+
+        .button {
+            display: inline-block;
+            margin-top: 50px;
+            padding: 15px 30px;
+
+            background: #2563eb;
+            color: white;
+
+            border-radius: 8px;
+            cursor: pointer;
+
+            transition:
+                background-color 0.3s ease,
+                transform 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #1d4ed8;
+            transform: scale(1.08);
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Transition</h1>
+
+
+    <div class="container">
+
+
+        <!-- transition-duration -->
+
+        <div class="demo">
+
+            <h2>transition-duration</h2>
+
+            <div class="box duration-box"></div>
+
+            <p>
+                Controls how long
+                the transition takes.
+            </p>
+
+        </div>
+
+
+        <!-- transition-timing-function -->
+
+        <div class="demo">
+
+            <h2>timing-function</h2>
+
+            <div class="box timing-box"></div>
+
+            <p>
+                Controls the speed
+                of the transition.
+            </p>
+
+        </div>
+
+
+        <!-- transition-delay -->
+
+        <div class="demo">
+
+            <h2>transition-delay</h2>
+
+            <div class="box delay-box"></div>
+
+            <p>
+                Adds a delay before
+                transition starts.
+            </p>
+
+        </div>
+
+
+        <!-- shorthand -->
+
+        <div class="demo">
+
+            <h2>transition</h2>
+
+            <div class="box shorthand-box"></div>
+
+            <p>
+                Shorthand for transition
+                properties.
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- Real-world example -->
+
+    <div style="text-align: center;">
+
+        <div class="button">
+            Hover Me
+        </div>
+
+    </div>
+
+
+</body>
+</html>
